@@ -2,6 +2,7 @@
 	// Firebase
 	import firebase from "firebase/app";
 	import "firebase/firestore";
+	import { onMount } from "svelte";
 	
 	// 3rd-party components
 	import { FirebaseApp } from "sveltefire";
@@ -14,6 +15,10 @@
 	
 	// On start
 	firebase.initializeApp(firebaseConfig);
+	
+	onMount(async () => {
+		
+	})
 </script>
 
 <FirebaseApp {firebase}>
